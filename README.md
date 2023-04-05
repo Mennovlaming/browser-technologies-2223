@@ -26,5 +26,24 @@ Nu ben ik eerste begonnen met het maken van een goede en duidelijke HTML structu
 
 <img width="745" alt="Screenshot 2023-04-05 at 20 03 08" src="https://user-images.githubusercontent.com/24406793/230165468-c794b1e0-797a-44ff-8cb2-8d35752589fe.png">
 
+### Week 3
+Toen de eerste HTML er stond, heb ik gewerkt aan een klein design zodat ik een beetje wist in welke richting ik wou gaan met de styling.
+<img width="291" alt="Screenshot 2023-04-05 at 20 05 53" src="https://user-images.githubusercontent.com/24406793/230166011-d7cc3de9-b91b-4765-8378-b00ca36f5e26.png">
+
+Vervolgens heb ik dit uitgewerkt in CSS.
+Toen de CSS stond ben ik gaan werken aan het opslaan in de local storage, waardoor je antwoorden kan opslaan en later de enquête af kan maken wanneer je de browser afsluit.
+
+```Javascript
+window.addEventListener('beforeunload', function() {
+    var pageId = 'page1';
+    var sections = ['lesstof1', 'geleerd1'];
+    sections.forEach(function(section) {
+        var selectedValue = document.querySelector('input[name="' + section + '"]:checked').value;
+        localStorage.setItem(pageId + '_' + section, selectedValue);
+    });
+});
+```
+Hier gebruik ik een addEventListener met 'beforeunload', hiermee voer ik de functie uit op het moment dat ik de browser afsluit of naar een andere pagina navigeer. Vervolgens zet ik voor elke section de data uit een checkbox in een variabele, en zet ik deze samen met de juiste pageina in de local storage, waardoor hij later weer op te halen is. 
+
 
 
