@@ -45,3 +45,17 @@ window.addEventListener('beforeunload', function() {
 ```
 Hier gebruik ik een addEventListener met 'beforeunload', hiermee voer ik de functie uit op het moment dat ik de browser afsluit of naar een andere pagina navigeer. Vervolgens zet ik voor elke section de data uit een checkbox in een variabele, en zet ik deze samen met de juiste pageina in de local storage, waardoor hij later weer op te halen is. 
 
+Uiteindelijk werkt de website zoals hij zou moeten, na het toevoegen van media queries. Nu is het tijd om te testen op andere devices en browsers.
+
+### Testen
+
+Ik ben begonnen met het testen op de standaardbrowsers, Google Chrome, Firefox en Safari. Met Google Chrome en Firefox ging alles zonder problemen. Alleen met Safari Technology Preview liep ik tegen de eerste issue aan. 
+
+Ik maakte gebruik van een HTML progress bar, deze was niet te stylen in Safari. Dit was een probleem voor mijn Dark Mode functie. en dus heb ik deze HTML bar helemaal achterwege gelaten en heb ik zelf een progressbar gemaakt in CSS. 
+
+```HTML
+<!-- <progress value="100" max="100"> </progress> -->
+        <div class="progressbar">
+            <div class="progress progress1"></div>
+        </div>
+```
