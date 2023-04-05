@@ -59,3 +59,4 @@ Ik maakte gebruik van een HTML progress bar, deze was niet te stylen in Safari. 
             <div class="progress progress1"></div>
         </div>
 ```
+
