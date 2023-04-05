@@ -1,0 +1,230 @@
+:root {
+    --main-color: #0047ff;
+    --main-size: 1.4em;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 40px;
+    margin: .5em;
+    text-align: center;
+}
+hr {
+    margin: 0 var(--main-size);
+    border: 1px solid black;
+}
+nav {
+    margin: var(--main-size);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.active {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+form {
+    background-color: #F0F0F0;
+    margin: 0 var(--main-size);
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+legend {
+    padding-top: 1.4em;
+    color: var(--main-color);
+    font-weight: 700;
+}
+fieldset {
+    border: none;
+    padding: var(--main-size);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type=radio]{
+	height: 0;
+	width: 0;
+	appearance: none;
+}
+input[type=radio] {
+    padding: 12px;
+    background-color: rgba(201, 201, 201, 0.449);
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+    margin-left: -1em;
+    margin-bottom: -.4em;
+}
+/* laatse iets meer margin door de 10 */
+section label:nth-of-type(10) input[type=radio] {
+    background-color: rgba(201, 201, 201, 0.449);
+    margin-left: -1.5em;
+}
+section {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+label:has(input:checked) input:checked{
+    background-color: #0048ff79;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+textarea {
+    border: none;
+    padding: 1em 0;
+}
+
+progress {
+    width: 90%;
+    height: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nextprev {
+    margin: 1em 0;
+}
+.nextprev a {
+    background-color: var(--main-color);
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.nextprev a:hover {
+    background-color: #012fa1;
+}
+
+  button {
+   padding: .5em;
+} 
+
+.send {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+}
+
+.hoofdtekst {
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.progressbar {
+    width: 70%;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.progress1 {
+    width: 16%; 
+}
+.progress2 {
+    width: 32%;
+}
+.progress3 {
+    width: 48%;
+}
+.progress4 {
+    width: 64%;
+}
+.progress5 {
+    width: 80%;
+}
+.progress6 {
+    width: 100%;
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 600px) {
+
+   
+   form {
+    width: 40em;
+   }
+   fieldset {
+    align-items: left;
+    margin-left: 2em;
+   }
+   textarea {
+    width: 70%;
+   }
+   p, label {
+    font-size: 18px;
+   }
+   legend {
+    font-size: 22px;
+   }
+   button {
+    font-size: 16px;
+   }
+   nav ul li a {
+    font-size: 18px;
+   }
+   .progressbar {
+    max-width: 60%;
+   }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --main-color:#6200c4;
+    }
+    body {
+        background-color: black;
+    }
+    h1 {
+        color: white;
+    }
+    a {
+        color: white;
+    }
+    nav ul li a {
+        color: white
+    }
+    form {
+        background-color: rgb(95, 95, 95);
+    }
+    label:has(input:checked) input:checked {
+        background-color: #6200c479;
+    }
+   .progressbar {
+    background-color: rgb(95, 95, 95);
+   }
+   .progress {
+    background-color: var(--main-color);
+   }
+  }

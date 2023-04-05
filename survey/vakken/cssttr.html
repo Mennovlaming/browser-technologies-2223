@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="../js/script.js"></script>
+    <title>web development enquete</title>
+</head>
+<body>
+    <h1>Web Development Enquete</h1>
+    <hr>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="wafs.html">Vak 1 /</a></li>
+                <li><a href="cssttr.html" class="active">Vak 2 /</a></li>
+                <li><a href="pwa.html">Vak 3 /</a></li>
+                <li><a href="bt.html">Vak 4 /</a></li>
+                <li><a href="rtw.html">Vak 5 /</a></li>
+                <li><a href="hcd.html">Vak 6 /</a></li>
+                <li><a href="personal.html">Info </a></li>
+            </ul>
+        </nav>
+        
+        <form id="survey-form">
+            <fieldset>
+                <legend>Vak 2</legend>
+                <p><strong>Naam vak:</strong> CSS To The Rescue</p>
+                <p><strong>Docent(en):</strong> Sanne & Vasilis</p>
+                <p><strong>Weken dat je het vak deed:</strong> 6 t/m 9</p>
+                <label for="">Welk cijfer zou je de lesstof geven?
+                    <section>
+                        <label>1<input type="radio" name="lesstof2" value="1" required></label>
+                        <label>2<input type="radio" name="lesstof2" value="2"></label>
+                        <label>3<input type="radio" name="lesstof2" value="3"></label>
+                        <label>4<input type="radio" name="lesstof2" value="4"></label>
+                        <label>5<input type="radio" name="lesstof2" value="5"></label>
+                        <label>6<input type="radio" name="lesstof2" value="6"></label>
+                        <label>7<input type="radio" name="lesstof2" value="7"></label>
+                        <label>8<input type="radio" name="lesstof2" value="8"></label>
+                        <label>9<input type="radio" name="lesstof2" value="9"></label>
+                        <label>10<input type="radio" name="lesstof2" value="10"></label>
+                    </section>
+                </label>
+                <label for="">Hoe goed snap je het nu? Heb je veel geleerd?
+                    <section>
+                        <label>1<input type="radio" name="geleerd2" value="1" required></label>
+                        <label>2<input type="radio" name="geleerd2" value="2"></label>
+                        <label>3<input type="radio" name="geleerd2" value="3"></label>
+                        <label>4<input type="radio" name="geleerd2" value="4"></label>
+                        <label>5<input type="radio" name="geleerd2" value="5"></label>
+                        <label>6<input type="radio" name="geleerd2" value="6"></label>
+                        <label>7<input type="radio" name="geleerd2" value="7"></label>
+                        <label>8<input type="radio" name="geleerd2" value="8"></label>
+                        <label>9<input type="radio" name="geleerd2" value="9"></label>
+                        <label>10<input type="radio" name="geleerd2" value="10"></label>
+                    </section>
+                </label>
+                <label for="">extra toelichting</label>
+                    <textarea name="toelichting" id="toelichting"></textarea>
+                    <div class="nextprev">
+                        <a href="wafs.html">Terug</a>
+                        <a href="pwa.html">Verder</a>
+                    </div>
+            </fieldset>
+        </form>
+
+       
+       
+        <!-- <progress value="32" max="100"> </progress> -->
+        <div class="progressbar">
+            <div class="progress progress2"></div>
+        </div>
+
+        <!-- <a href=""></a> -->
+    </main> 
+</body>
+</html>
