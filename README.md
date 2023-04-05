@@ -49,7 +49,7 @@ Uiteindelijk werkt de website zoals hij zou moeten, na het toevoegen van media q
 
 ### Testen
 
-Ik ben begonnen met het testen op de standaardbrowsers, Google Chrome, Firefox en Safari. Met Google Chrome en Firefox ging alles zonder problemen. Alleen met Safari Technology Preview liep ik tegen de eerste issue aan. 
+Ik ben begonnen met het testen op de standaardbrowsers, Google Chrome, Firefox en Safari. Met Google Chrome ging alles zonder problemen. Alleen met Safari Technology Preview liep ik tegen de eerste issue aan. 
 
 Ik maakte gebruik van een HTML progress bar, deze was niet te stylen in Safari. Dit was een probleem voor mijn Dark Mode functie. en dus heb ik deze HTML bar helemaal achterwege gelaten en heb ik zelf een progressbar gemaakt in CSS. 
 
@@ -59,4 +59,21 @@ Ik maakte gebruik van een HTML progress bar, deze was niet te stylen in Safari. 
             <div class="progress progress1"></div>
         </div>
 ```
+Firefox support de 'has' selector nog niet, waardoor je niet kan zien welke keuze je selecteert met de custom radio buttons, hiervoor maak ik namelijk gebruik van de 'has' selector. 
+
+Om dit te fixen heb ik de has selector achterwege gelaten, en uiteindelijk is mijn styling hetzelfde gebleven, in plaats van de has selector style ik nu mijn input:checked op deze manier:
+```CSS
+input:checked {
+    background-color: #0048ff79;
+}
+```
+
+Omdat wij ook moesten testen op een 'obscure' browser, heb ik besloten om Flow browser te downloaden. Na een tijd uitzoeken hoe ik überhaupt op een website moest komen, is het dan uiteindelijk toch gelukt op mijn website te openen. 
+
+<img width="491" alt="Screenshot 2023-04-05 at 20 30 55" src="https://user-images.githubusercontent.com/24406793/230172676-a02388aa-2d48-48df-aae0-ee00af069d23.png">
+Ik liep al snel tegen een paar dingen aan met het gebruik van Flow: 
+1. mijn gecustomizede radio buttons waren weg, dit zal waarschijnlijk komen omdat je deze niet kan aanpassen in Flow, hier moest dus een fallback voor komen met normale radio buttons. 
+2. Border radius op mijn buttons was weg, waardoor dit komt zou ik oprecht niet weten. 
+
+Al met al valt het wel mee, nu alleen op zoek naar een manier om een fallback te krijgen voor de custom radio buttons. 
 
