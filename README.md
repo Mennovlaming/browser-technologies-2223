@@ -45,5 +45,3 @@ window.addEventListener('beforeunload', function() {
 ```
 Hier gebruik ik een addEventListener met 'beforeunload', hiermee voer ik de functie uit op het moment dat ik de browser afsluit of naar een andere pagina navigeer. Vervolgens zet ik voor elke section de data uit een checkbox in een variabele, en zet ik deze samen met de juiste pageina in de local storage, waardoor hij later weer op te halen is. 
 
-
-
