@@ -30,6 +30,7 @@ Nu ben ik eerste begonnen met het maken van een goede en duidelijke HTML structu
 Toen de eerste HTML er stond, heb ik gewerkt aan een klein design zodat ik een beetje wist in welke richting ik wou gaan met de styling.
 <img width="291" alt="Screenshot 2023-04-05 at 20 05 53" src="https://user-images.githubusercontent.com/24406793/230166011-d7cc3de9-b91b-4765-8378-b00ca36f5e26.png">
 
+Ik pas het principe 1 action per screen toe, waardoor je de aandacht van de gebruiker houd. Elk scherm heeft 1 hoofddoel, zijn mening geven over 1 vak.
 Vervolgens heb ik dit uitgewerkt in CSS.
 Toen de CSS stond ben ik gaan werken aan het opslaan in de local storage, waardoor je antwoorden kan opslaan en later de enquête af kan maken wanneer je de browser afsluit.
 
@@ -77,3 +78,22 @@ Ik liep al snel tegen een paar dingen aan met het gebruik van Flow:
 
 Al met al valt het wel mee, nu alleen op zoek naar een manier om een fallback te krijgen voor de custom radio buttons. 
 
+## Progressive enhancement
+De site word progressive enhancent door het gebruik van CSS en Javascript. 
+In eerste instantie heb je een simpel formulier, van een simpel formulier ga je naar een formulier met styling en een progressiebar, en uiteindelijk heb je een formulier met alles erbij die je progressie kan opslaan.
+
+## Brief naar backend
+Om de site zo optimaal mogelijk te laten werken, moet je ook rekening houden met mensen die om wat voor reden dan ook geen client side Javascript kunnen gebruiken. 
+Hiervoor is het gebruiken van een goede backend noodzakelijk. 
+
+De backend zal ervoor moeten zorgen dat de gegevens opgeslagen worden in een database, en deze vanuit deze database weer worden geladen, als hierom gevraagd word. 
+
+De gebruiker wilt:
+1. Data invullen
+2. Data moet vaak verstuurd en geupdate worden, denk bijvoorbeeld aan elke keer dat de gebruiker naar de volgende pagina gaat.
+3. Aan het einde is alle data opgeslagen, en bij de submit is de final versie verstuurd (mogelijk met studentinformatie). 
+
+## Aanpassingen
+Om de site vanuit het gebruikerspunt zo goed mogelijk te laten werken, heb ik een paar kleine aanpassingen aan de hoofdopdracht toegevoegd, dit kan altijd nog veranderd worden als dit niet bevalt. 
+1. Gebruikers hoeven niet in het begin hun studentnummer en naam op te geven, ik ben van mening dat dit het resultaat van de enquête zal beïnvloeden, omdat mensen over het algemeen anoniem eerlijker zijn. Om deze reden is het aan het einde optioneel geworden, zo kunnen studenten er zelf voor kiezen of ze hun naam delen of niet. 
+2. De naam van het vak, docenten en periode van het vak staan al vast, worden al opgehaald vanuit een database (bijvoorbeeld). Studenten weten vaak de periode niet meer, en deze data is geen mening, dus zal het fouten besparen om dit gewoon mee te geven, ook houd dit de focus bij de mening geven over de vakken.
