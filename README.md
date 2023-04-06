@@ -103,3 +103,5 @@ Ik had nog graag een aantal extra verbeteringen willen doorvoeren, die ik helaas
 1. Zelf de backend features die nodig waren maken.
 2. Daadwerkelijk laden uit een database. 
 3. Ook op Flow varianten vinden voor de radio buttons.
+4. Styling wat mooier, vloeiender.
+5. Animaties(enhancement)
