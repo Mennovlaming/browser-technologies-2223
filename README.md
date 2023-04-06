@@ -97,3 +97,9 @@ De gebruiker wilt:
 Om de site vanuit het gebruikerspunt zo goed mogelijk te laten werken, heb ik een paar kleine aanpassingen aan de hoofdopdracht toegevoegd, dit kan altijd nog veranderd worden als dit niet bevalt. 
 1. Gebruikers hoeven niet in het begin hun studentnummer en naam op te geven, ik ben van mening dat dit het resultaat van de enquête zal beïnvloeden, omdat mensen over het algemeen anoniem eerlijker zijn. Om deze reden is het aan het einde optioneel geworden, zo kunnen studenten er zelf voor kiezen of ze hun naam delen of niet. 
 2. De naam van het vak, docenten en periode van het vak staan al vast, worden al opgehaald vanuit een database (bijvoorbeeld). Studenten weten vaak de periode niet meer, en deze data is geen mening, dus zal het fouten besparen om dit gewoon mee te geven, ook houd dit de focus bij de mening geven over de vakken.
+
+## Toekomstige verbeteringen
+Ik had nog graag een aantal extra verbeteringen willen doorvoeren, die ik helaas door de tijdsdruk niet heb kunnen doen. Alles wat moet zit in de website maar ik had de volgende dingen nog toe willen voegen:
+1. Zelf de backend features die nodig waren maken.
+2. Daadwerkelijk laden uit een database. 
+3. Ook op Flow varianten vinden voor de radio buttons.
